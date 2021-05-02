@@ -27,12 +27,47 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+        My Portfolio
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
   );
+}
+
+export function Fefe() {
+     //home route 
+     //includes resume, skills weather 
+     //life sory
+    const classes = useStyles();
+    const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+
+    return (
+    <Container maxWidth="lg" className={classes.container}>
+    <Grid container spacing={3}>
+      
+      <Grid item xs={12} md={8} lg={9}>
+        <Paper className={fixedHeightPaper}>
+       
+        </Paper>
+      </Grid>
+
+      <Grid item xs={12} md={4} lg={3}>
+        <Paper className={fixedHeightPaper}>
+  
+        </Paper>
+      </Grid>
+
+      <Grid item xs={12}>
+        <Paper className={classes.paper}>
+
+        </Paper>
+      </Grid>
+    </Grid>
+    <Box pt={4}>
+      <Copyright />
+    </Box>
+  </Container>);
 }
 
 const drawerWidth = 240;
@@ -53,6 +88,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
+    backgroundColor: '#1c4fb4',
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -122,8 +158,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Dashboard(props) {
 
   const classes = useStyles();
-  const children = props
-  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
 
   //Side Menu 
@@ -134,6 +168,8 @@ export default function Dashboard(props) {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
+  
 
 
   return (
@@ -189,31 +225,7 @@ export default function Dashboard(props) {
 
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-{/*         <Container maxWidth="lg" className={classes.container}>
-          <Grid container spacing={3}>
-            
-            <Grid item xs={12} md={8} lg={9}>
-              <Paper className={fixedHeightPaper}>
-             
-              </Paper>
-            </Grid>
-     
-            <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper}>
-        
-              </Paper>
-            </Grid>
-
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-      
-              </Paper>
-            </Grid>
-          </Grid>
-          <Box pt={4}>
-            <Copyright />
-          </Box>
-        </Container> */}
+        {props.children}
       </main>
     </div>
   );
