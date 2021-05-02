@@ -1,12 +1,15 @@
-import './App.css';
-import Dashboard from "../src/views/Dashboard"
+//import logo from './logo.svg';
+import "./App.css";
 
-function App() {
+import MyNavbar from "./components/Navbar/Navbar";
+
+const App = () => {
   return (
     <div>
-      <Dashboard></Dashboard>
+      <MyNavbar />
+      My Portfolio
     </div>
   );
-}
+};
 
 export default App;
