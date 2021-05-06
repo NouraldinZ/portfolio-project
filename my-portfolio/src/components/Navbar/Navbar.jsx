@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import logo from "../../assets/icons/NZ-Icon.png";
-import "./NavbarStyle.css";
+import "./navbarStyle.css";
 
 export const MyNavbar = () => {
   return (
