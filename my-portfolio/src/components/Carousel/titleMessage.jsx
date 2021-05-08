@@ -14,7 +14,7 @@ const MyTitleMessage = styled.h1`
     font-size: 1.25em;
   }
   div {
-    color: ${(props) => props.theme.textColor};
+    color: ${(props) => props.theme.egypt};
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     font-weight: 100;
     letter-spacing: 7px;
@@ -45,30 +45,32 @@ const TitleMessage = () => {
       dencrypt(values[i]);
 
       i = i === values.length - 1 ? 0 : i + 1;
-    }, 10000);
+    }, 5000);
 
     return () => clearInterval(action);
   }, [dencrypt]);
   return (
     <MyTitleMessage>
       <div className="titleMessage">
-        <div className="main text-center mb-3"></div>
-        Hello, My name is
-        <br />
-        <span>
-          <TextLoop delay={5000}>
-            <strong>Nour Zeina</strong>
-            <strong>Nour</strong>
-            <strong>Zeina</strong>
-            <strong>Nouraldin Zeina</strong>
-            <strong>Nouraldin</strong>
-            <strong>Zeina</strong>
-          </TextLoop>
-        </span>
-        <div className="sub">
+        <div className="heading">
+          <div className="main text-center mb-3"></div>
+          Hello, My name is
+          <br />
           <span>
-            <strong>{result}</strong>
+            <TextLoop delay={5000}>
+              <strong>Nour Zeina</strong>
+              <strong>Nour</strong>
+              <strong>Zeina</strong>
+              <strong>Nouraldin Zeina</strong>
+              <strong>Nouraldin</strong>
+              <strong>Zeina</strong>
+            </TextLoop>
           </span>
+          <div className="sub">
+            <span>
+              <strong>{result}</strong>
+            </span>
+          </div>
         </div>
       </div>
     </MyTitleMessage>

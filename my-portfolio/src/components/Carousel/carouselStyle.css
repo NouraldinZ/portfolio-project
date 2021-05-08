@@ -2,3 +2,7 @@
   height: 100vh;
   object-fit: cover;
 }
+
+.quote {
+  color: #800000;
+}
