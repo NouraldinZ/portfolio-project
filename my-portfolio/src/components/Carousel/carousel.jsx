@@ -17,7 +17,7 @@ const MyCarousel = () => {
           />
           <Carousel.Caption>
             <h3>Quote Of the Day</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <p>"what is grief if not love perserving? - wandavision"</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={7500}>
@@ -28,7 +28,12 @@ const MyCarousel = () => {
           />
           <Carousel.Caption>
             <h3>Quote Of the Day</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>
+              <strong>
+                "من سار على الدرب تعثّر وسقط ، تألم ونهض ، خُذل و وقف ، أتته
+                لحظات يأس فحارب ، ثم مشى بالعزيمة وظن بالله ظن الخير حتى وصل";
+              </strong>
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={7500}>
@@ -40,7 +45,10 @@ const MyCarousel = () => {
           <Carousel.Caption>
             <h3>Quote Of the Day</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              "طلبت من الله الكثير ومنعه عني، وكان منعه قمة عطائه، فتعلمت أن
+              أطلب ما أريد وأقبل بما يريد، فدائماً إرادته تأتي بالخير وإرادتي
+              تسوقني إلى الشر، ولا زال يأخذ بيدي إلى الخير حيث تيقنت أنه هو الله
+              أرحم الراحمين. د.مصطفى محمود"
             </p>
           </Carousel.Caption>
         </Carousel.Item>
