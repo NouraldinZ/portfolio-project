@@ -1,8 +1,8 @@
 //import logo from './logo.svg';
 import "./App.css";
-import MyNavbar from "./components/Navbar/navbar";
-import MyCarousel from "./components/Carousel/carousel";
-import MyTitleMessage from "./components/Carousel/titleMessage";
+import MyNavbar from "./components/navbar/navbar";
+import MyCarousel from "./components/carousel/carousel";
+import MyTitleMessage from "./components/carousel/title-message";
 
 const App = () => {
   return (

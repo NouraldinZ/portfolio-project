@@ -54,7 +54,7 @@ const TitleMessage = () => {
       <div className="titleMessage">
         <div className="heading">
           <div className="main text-center mb-3">
-            Hello, My name is
+            <bold>Hello, My name is</bold>
             <br />
             <span>
               <TextLoop delay={5000}>

@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import logo from "../../assets/icons/NZ-Icon.png";
-import "./navbarStyle.css";
+import logo from "../../assets/icons/NZ-alt.png";
+import "./navbar-style.css";
 
 export const MyNavbar = () => {
   return (
