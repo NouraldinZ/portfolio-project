@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import ScrollDown from "../Scroll/scrollDown";
 import Slide1 from "../../assets/img/carousal/slide1.webp";
 import Slide2 from "../../assets/img/carousal/slide2.webp";
 import Slide3 from "../../assets/img/carousal/slide3.webp";
@@ -53,6 +54,7 @@ const MyCarousel = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      <ScrollDown />
     </div>
   );
 };

@@ -22,7 +22,7 @@ const MyTitleMessage = styled.h1`
       font-size: 50px;
     }
     .sub {
-      font-size: 27px;
+      font-size: 25px;
       letter-spacing: 2px;
     }
   }
@@ -53,19 +53,20 @@ const TitleMessage = () => {
     <MyTitleMessage>
       <div className="titleMessage">
         <div className="heading">
-          <div className="main text-center mb-3"></div>
-          Hello, My name is
-          <br />
-          <span>
-            <TextLoop delay={5000}>
-              <strong>Nour Zeina</strong>
-              <strong>Nour</strong>
-              <strong>Zeina</strong>
-              <strong>Nouraldin Zeina</strong>
-              <strong>Nouraldin</strong>
-              <strong>Zeina</strong>
-            </TextLoop>
-          </span>
+          <div className="main text-center mb-3">
+            Hello, My name is
+            <br />
+            <span>
+              <TextLoop delay={5000}>
+                <strong>Nour Zeina</strong>
+                <strong>Nour</strong>
+                <strong>Zeina</strong>
+                <strong>Nouraldin Zeina</strong>
+                <strong>Nouraldin</strong>
+                <strong>Zeina</strong>
+              </TextLoop>
+            </span>
+          </div>
           <div className="sub">
             <span>
               <strong>{result}</strong>
