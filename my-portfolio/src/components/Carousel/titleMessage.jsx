@@ -28,7 +28,12 @@ const MyTitleMessage = styled.h1`
   }
 `;
 
-const values = ["Nour Zeina", "Nour", "Nouraldin Zeina", "Zeina"];
+const values = [
+  "I am a Computer Engineer",
+  "I am a Software Engineer",
+  "I am a Full Stack Developer",
+  "I am passionate about Mobile and Web Development",
+];
 
 const TitleMessage = () => {
   const { result, dencrypt } = useDencrypt();
@@ -40,7 +45,7 @@ const TitleMessage = () => {
       dencrypt(values[i]);
 
       i = i === values.length - 1 ? 0 : i + 1;
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(action);
   }, [dencrypt]);
@@ -48,12 +53,23 @@ const TitleMessage = () => {
     <MyTitleMessage>
       <div className="titleMessage">
         <div className="main text-center mb-3"></div>
-        Hello, I am
+        Hello, My name is
         <br />
         <span>
-          <strong>{result}</strong>
+          <TextLoop delay={5000}>
+            <strong>Nour Zeina</strong>
+            <strong>Nour</strong>
+            <strong>Zeina</strong>
+            <strong>Nouraldin Zeina</strong>
+            <strong>Nouraldin</strong>
+            <strong>Zeina</strong>
+          </TextLoop>
         </span>
-        <div className="sub">{result}</div>
+        <div className="sub">
+          <span>
+            <strong>{result}</strong>
+          </span>
+        </div>
       </div>
     </MyTitleMessage>
   );
