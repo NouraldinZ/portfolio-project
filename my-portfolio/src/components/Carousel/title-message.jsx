@@ -32,7 +32,8 @@ const values = [
   "I am a Computer Engineer",
   "I am a Software Engineer",
   "I am a Full Stack Developer",
-  "I am passionate about Mobile and Web Development",
+  "Mobile and Web Development enthusiast",
+  "I tell computers what to do for a living",
 ];
 
 const TitleMessage = () => {
