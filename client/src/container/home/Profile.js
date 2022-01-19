@@ -30,7 +30,7 @@ export default function Profile() {
 
           <div className="profile-details-name">
             <span className="primary-text">
-              Hello, I'm <span className="Highlighted-text"> Nouraldin</span>
+              Hello, I'm <span className="highlighted-text"> Nouraldin</span>
             </span>
           </div>
 
@@ -65,9 +65,9 @@ export default function Profile() {
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
-          <div className="profile-picture">
-            <div className="profile-picture-background"></div>
-          </div>
+        </div>
+        <div className="profile-picture">
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
