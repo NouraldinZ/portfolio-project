@@ -25,7 +25,7 @@ export default class ScrollService {
   };
 
   isElementInView = (elem, type) => {
-    let rec = elem.getBoundingClientRect();
+    let rect = elem.getBoundingClientRect();
     let elementTop = rect.top;
     let elementBottom = rect.bottom;
 
