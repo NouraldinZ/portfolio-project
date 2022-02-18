@@ -1,9 +1,25 @@
+import AboutMe from "../container/about-me/AboutMe";
+import ContactMe from "../container/contact-me/ContactMe";
 import Home from "../container/home/Home";
+import Resume from "../container/resume/Resume";
+import Testimonial from "../container/testmonial/Testimonial";
 
 export const TOTAL_SCREENS = [
   {
     screen_name: "Home",
     component: Home,
+  },
+  {
+    screen_name: "AboutMe",
+    component: AboutMe,
+  },
+  {
+    screen_name: "Testimonial",
+    component: Testimonial,
+  },
+  {
+    screen_name: "Contact Me",
+    component: ContactMe,
   },
 ];
 

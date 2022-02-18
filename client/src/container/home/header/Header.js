@@ -21,7 +21,7 @@ export default function Header() {
   );
 
   const getHeaderOptionsClass = (index) => {
-    let classes = "header-option";
+    let classes = "header-option ";
     if (index < TOTAL_SCREENS.length - 1) {
       classes += "header-option-sperator";
     }
@@ -52,6 +52,7 @@ export default function Header() {
       </div>
     ));
   };
+
   return (
     <div>
       <div

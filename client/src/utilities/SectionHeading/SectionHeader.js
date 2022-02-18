@@ -3,7 +3,7 @@ import "./SectionHeader.css";
 
 export default function SectionHeader(props) {
   return (
-    <div className="header-container">
+    <div className="heading-container">
       <div className="section-heading">
         <span>{props.title}</span>
       </div>
