@@ -10,7 +10,7 @@ import "./Testimonial.css";
 
 export default function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeInScreenHandler !== props.id)
+    if (screen.fadeInScreen !== props.id)
       return Animations.animations.fadeInScreen(props.id);
   };
 
