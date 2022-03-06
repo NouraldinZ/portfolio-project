@@ -56,12 +56,13 @@
   height: 12px;
   width: 12px;
   margin: 0 10px 0 0;
-  background-color: #ff5823;
+  background-color: #00bfff;
   border-radius: 50%;
 }
 
 .about-me-options .highlighted-btn {
   margin: 0 0 0 30px;
+  background-color: var(--dark-orange);
 }
 
 @media screen and (max-width: 1110px) {

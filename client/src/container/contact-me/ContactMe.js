@@ -34,15 +34,24 @@ export default function ContactMe(props) {
       };
       setBool(true);
       const res = await axios.post(`/contact`, data);
+      console.log(data);
+      console.log(res.status);
 
+      console.log(res.status);
       if (name.length === 0 || email.length === 0 || message.length === 0) {
-        setBanner(res.data.message);
-        toast.error(res.data.message);
+        console.log("I am not here");
+        setBanner(res.data.msg);
+        toast.error(res.data.msg);
         setBool(false);
       } else if (res.status === 200) {
-        setBanner(res.data.message);
-        toast.success(res.data.message);
+        setBanner(res.data.msg);
+        toast.success(res.data.msg);
         setBool(false);
+        console.log("Iam here");
+
+        setName("");
+        setEmail("");
+        setMessage("");
       }
     } catch (error) {
       console.log(error);
@@ -97,13 +106,14 @@ export default function ContactMe(props) {
           <form onSubmit={submitForm}>
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
-            <input type="text" onChange={handleName} />
+            <input value={name} type="text" onChange={handleName} />
 
             <label htmlFor="email">Email</label>
-            <input type="email" onChange={handleEmail} />
+            <input value={email} type="email" onChange={handleEmail} />
 
             <label htmlFor="message">Message</label>
             <textarea
+              value={message}
               type="text"
               onChange={handleMessage}
               style={{ minHeight: "auto" }}
